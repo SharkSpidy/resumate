@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ResuMate ⚡ | ATS Resume Formatter</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/942/942748.png">
+</head>
+<body>
+  <header class="header">
+    <h1>ResuMate ⚡</h1>
+    <p class="tagline">Your Resume’s Best Mate — make it ATS friendly instantly.</p>
+  </header>
+
+  <main class="container">
+    <div class="upload-box glass-card">
+      <p>📄 Paste your resume below:</p>
+      <textarea id="resumeInput" placeholder="Paste your resume text here..."></textarea>
+      <button id="formatBtn">✨ Format Resume</button>
+    </div>
+
+    <div class="output-box glass-card hidden">
+      <h3>🧠 Cleaned Resume (ATS Friendly)</h3>
+      <textarea id="outputText" readonly></textarea>
+      <div class="actions">
+        <button id="copyBtn">Copy</button>
+        <button id="downloadBtn">Download Clean Resume</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>
+      Made with ❤️ by <strong>Joe</strong> •
+      <a href="https://buymeacoffee.com/sharkspidy" target="_blank" rel="noopener">☕ Support Me</a>
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script
+    data-name="BMC-Widget"
+    data-cfasync="false"
+    src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+    data-id="SharkSpidy"
+    data-description="Support me on Buy me a coffee!"
+    data-message="Thankuuuu!!! 🥹❤️"
+    data-color="#5F7FFF"
+    data-position="Right"
+    data-x_margin="18"
+    data-y_margin="18">
+  </script>
+</body>
+</html>

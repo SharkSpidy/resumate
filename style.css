@@ -1,0 +1,167 @@
+/* ---------- GLOBAL ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #101014 0%, #0a0a0a 100%);
+  color: #f2f2f2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- HEADER ---------- */
+.header {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  animation: fadeIn 1.2s ease;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #5F7FFF, #A08BFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header .tagline {
+  color: #bbb;
+  font-size: 1rem;
+  margin-top: 8px;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+  width: 90%;
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* ---------- CARDS ---------- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.03);
+  animation: fadeInUp 1s ease;
+}
+
+.glass-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* ---------- INPUTS ---------- */
+input[type="file"] {
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  width: 100%;
+  color: #ccc;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #f2f2f2;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  resize: vertical;
+  font-size: 0.95rem;
+}
+
+button {
+  background: linear-gradient(90deg, #5F7FFF, #A08BFF);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(95, 127, 255, 0.5);
+}
+
+/* ---------- OUTPUT ---------- */
+.output-box h3 {
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #d5d5ff;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  margin-top: auto;
+  padding: 40px 0;
+  text-align: center;
+  color: #999;
+  border-top: 1px solid #1a1a1a;
+  width: 100%;
+}
+
+.footer a {
+  color: #bbb;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+.footer strong {
+  color: #fff;
+}
+
+/* ---------- ANIMATIONS ---------- */
+.hidden { display: none; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .header h1 { font-size: 2rem; }
+  .glass-card { padding: 20px; }
+  textarea { min-height: 120px; }
+}
