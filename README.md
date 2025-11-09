@@ -1,6 +1,3 @@
-Nice — here’s a ready-to-drop **`README.md`** for **ResuMate** that matches your current app (paste-only input). Copy the entire block below into your repo as `README.md`.
-
-```markdown
 # ⚡ ResuMate — ATS Resume Formatter
 
 **ResuMate** — *Your Resume’s Best Mate* — is a tiny, zero-dependency web app that instantly cleans and formats resume text so it becomes ATS-friendly.  
